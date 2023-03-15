@@ -31,11 +31,6 @@ const getHourlyForecast = async ({name: city})=>{
 
 const formatTemperature = (temp) => `${temp?.toFixed(1)}°`
 const createIconUrl = (icon) => `https://openweathermap.org/img/wn/${icon}@2x.png` ; 
-// https://openweathermap.org/img/wn/10d@2x.png
-
-
-
-
 
 const loadCurrentForecast = ({name ,main:{temp , temp_max , temp_min }, weather:[{description}]}) => {
     const currentForecastElement = document.querySelector("#current-forecast");
@@ -184,8 +179,12 @@ const onSearchChange = async (event) => {
     for(let {lat , lon, name, state , country } of listOfCities ){
         options += `<option data-city-details= '${JSON.stringify({lat , lon, name})}' value="${name}, ${state}, ${country}"></option>` ;
     }
+    
     document.querySelector("#cities").innerHTML = options ; 
+     
+
     // console.log( options ) ;  
+    
 
     }
 }

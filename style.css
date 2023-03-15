@@ -28,16 +28,17 @@ p {
     margin: var(--spacing-medium) ; 
 }
 
+
 body {
     margin: 0 ; 
     font-family: Arial, Helvetica, sans-serif ; 
     max-width: 800px ; 
     margin: var(--spacing-regular) auto ;
-    background-image: url(Images/6.jpg);
+    background-image: url(Images/6.jpg); 
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    color: white;
+     color: white;
 }
 
 
