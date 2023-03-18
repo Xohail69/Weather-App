@@ -160,7 +160,7 @@ function debounce(func){
         timer = setTimeout(() => {
             console.log(debounce) ; 
             func.apply(this , args) ; 
-        } , 500 ) ; 
+        } , 1000 ) ; 
     }
 }
 
